@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlwebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -20,5 +21,12 @@ module.exports = {
   devServer: {
     open: true,
     port: 3000
-  }
+  },
+  plugins: [
+    new HtmlwebpackPlugin({
+      title: 'Honey Ryder Task',
+      template: 'src/index.html',
+      filename: 'index.html'
+    })
+  ]
 };
