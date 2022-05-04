@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint --ext .tsx src/"
+    "lint": "eslint --ext .tsx src/",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
