@@ -9,9 +9,13 @@ module.exports = {
   module: {
     rules: [
       {
-        loader: 'ts-loader',
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
       }
     ]
+  },
+  resolve: {
+    extensions: ['.tsx'],
   },
   devServer: {
     open: true,
