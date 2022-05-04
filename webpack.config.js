@@ -16,7 +16,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.tsx'],
+    extensions: ['.js', '.tsx'],
   },
   devServer: {
     open: true,
