@@ -20,8 +20,42 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "import/prefer-default-export": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            "error", 
+            { 
+                "extensions": [
+                    ".jsx", ".tsx"
+                ] 
+            }
+        ],
+        "react/function-component-definition": [
+            "error", 
+            {
+                "namedComponents": "arrow-function"
+            }
+        ]
     },
     "settings": {
+        "node": {
+            "extensions": [
+                ".js",
+                ".jsx",
+                ".json",
+                ".ts",
+                ".tsx"
+            ]
+        },
         "import/resolver":{
             "typescript": []
         }
