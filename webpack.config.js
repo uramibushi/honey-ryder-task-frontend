@@ -16,13 +16,11 @@ module.exports = {
     ]
   },
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, '/src'),
-      'components': path.join(__dirname, '/src/components'),
-      'features': path.join(__dirname, '/src/features'),
-      'pages': path.join(__dirname, '/src/pages'),
-    },
-    extensions: ['.js', '.tsx'],
+    modules: [
+      path.resolve('./node_modules'),
+      path.resolve('./src'),
+    ],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   devServer: {
     open: true,
