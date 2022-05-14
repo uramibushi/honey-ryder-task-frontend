@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Button } from '@mui/material';
+import { Button as MuiButton } from '@mui/material';
 
 type ButtonPropsType = {
   variant: 'text' | 'contained' | 'outlined' | undefined;
@@ -14,13 +14,13 @@ const ButtonBase : FC<ButtonPropsType> = ({
   onClick,
   children,
 }) => (
-  <Button
+  <MuiButton
     variant={variant}
     color={color}
     onClick={onClick}
   >
     {children}
-  </Button>
+  </MuiButton>
 );
 
 export default ButtonBase;
