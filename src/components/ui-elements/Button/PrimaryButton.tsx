@@ -1,19 +1,19 @@
 import React, { FC } from 'react';
-import Button from '@mui/material/Button';
+import ButtonBase from 'components/ui-elements/Button/ButtomBase';
 
 type PrimaryButtonPropsType = {
   onClick: React.MouseEventHandler<HTMLButtonElement>;
-  children: React.ReactNode,
+  children: React.ReactNode;
 }
 
 const PrimaryButton : FC<PrimaryButtonPropsType> = ({ onClick, children }) => (
-  <Button
+  <ButtonBase
     variant="contained"
     color="primary"
     onClick={onClick}
   >
     {children}
-  </Button>
+  </ButtonBase>
 );
 
 export default PrimaryButton;

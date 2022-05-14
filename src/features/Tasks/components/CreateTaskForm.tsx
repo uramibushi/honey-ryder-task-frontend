@@ -14,7 +14,7 @@ const CreateTaskForm = () => {
   const [task, setTask] = useState<TaskType>({
     title: '',
     detail: undefined,
-    dueDate: undefined
+    dueDate: undefined,
   });
 
   const createNewTask : React.MouseEventHandler<HTMLButtonElement> = () => {
