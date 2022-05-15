@@ -1,8 +1,7 @@
-import React, { HTMLInputTypeAttribute } from 'react';
+import React from 'react';
 import TextFieldBase from 'components/ui-elements/TextField/TextFieldBase';
 
 type TextFieldPropsType = {
-  type?: HTMLInputTypeAttribute,
   id?: string,
   label?: string,
   value?: string,
@@ -10,14 +9,13 @@ type TextFieldPropsType = {
 }
 
 const TextField : React.FC<TextFieldPropsType> = ({
-  type = 'text',
   id = undefined,
   label = undefined,
   value = undefined,
   onChange = undefined,
 }) => (
   <TextFieldBase
-    type={type}
+    type="text"
     id={id}
     label={label}
     value={value}
