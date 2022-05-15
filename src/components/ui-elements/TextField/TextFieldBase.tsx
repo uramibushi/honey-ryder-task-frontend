@@ -1,29 +1,27 @@
-import React, { HTMLInputTypeAttribute } from 'react';
-import { TextField as MuiTextField } from '@mui/material';
+import React from 'react';
+import { TextField as MuiTextField, TextFieldProps as MuiTextFieldProps } from '@mui/material';
 
-type TextFieldBasePropsType = {
-  type?: HTMLInputTypeAttribute,
-  id?: string,
-  label?: string,
-  value?: string,
-  onChange?: React.ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement>,
-}
+export type TextFieldProps = MuiTextFieldProps;
 
-const TextFieldBase : React.FC<TextFieldBasePropsType> = ({
+export const TextFieldBase : React.FC<TextFieldProps> = ({
   type = 'text',
   id = undefined,
   label = undefined,
   value = undefined,
+  multiline = false,
+  minRows = undefined,
+  maxRows = undefined,
   onChange = undefined,
 }) => (
   <MuiTextField
-    variant="standard"
+    variant="outlined"
     type={type}
     id={id}
     label={label}
     value={value}
+    multiline={multiline}
+    minRows={minRows}
+    maxRows={maxRows}
     onChange={onChange}
   />
 );
-
-export default TextFieldBase;
