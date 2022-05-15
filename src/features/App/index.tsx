@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateTaskForm from 'features/Tasks/components/CreateTaskForm';
+import { CreateTaskForm } from 'features/Tasks/components/CreateTaskForm';
 
 const App = () => (
   <div>

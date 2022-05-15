@@ -1,3 +1,3 @@
-import CreateTaskForm from 'features/Tasks/components/CreateTaskForm';
+import { CreateTaskForm } from 'features/Tasks/components/CreateTaskForm';
 
 export default { CreateTaskForm };
