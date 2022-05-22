@@ -1,4 +1,5 @@
-import { TextField } from 'components/ui-elements/TextField/TextField';
+import { DateField } from 'components/ui-elements/TextField/DateField';
 import { TextArea } from 'components/ui-elements/TextField/TextArea';
+import { TextField } from 'components/ui-elements/TextField/TextField';
 
-export { TextField, TextArea };
+export { DateField, TextArea, TextField };
