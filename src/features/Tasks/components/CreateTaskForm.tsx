@@ -7,12 +7,14 @@ import {
 } from 'components/ui-elements/TextField';
 import Stack from '@mui/material/Stack';
 import { useCreateNewTask } from 'features/Tasks/hooks';
+import { ErrorMessage } from 'components/ui-elements/Message';
 
 export const CreateTaskForm = () => {
   const { task, setTask, createNewTask } = useCreateNewTask();
   return (
     <div>
       <h1>Honey Ryder Task</h1>
+      <ErrorMessage />
       <div>
         <Stack spacing={2}>
           <TextField
