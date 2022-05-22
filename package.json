@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
+    "prettier": "prettier --write src",
     "lint": "eslint --ext .tx,.tsx src/",
     "test": "jest"
   },
