@@ -1,9 +1,12 @@
 import React from 'react';
-import { TextField as MuiTextField, TextFieldProps as MuiTextFieldProps } from '@mui/material';
+import {
+  TextField as MuiTextField,
+  TextFieldProps as MuiTextFieldProps,
+} from '@mui/material';
 
 export type TextFieldProps = MuiTextFieldProps;
 
-export const TextFieldBase : React.FC<TextFieldProps> = ({
+export const TextFieldBase: React.FC<TextFieldProps> = ({
   type = 'text',
   id = undefined,
   label = undefined,

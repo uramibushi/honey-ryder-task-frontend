@@ -3,22 +3,26 @@ import { Button as MuiButton } from '@mui/material';
 
 type ButtonPropsType = {
   variant: 'text' | 'contained' | 'outlined' | undefined;
-  color: 'inherit' | 'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning' | undefined;
+  color:
+    | 'inherit'
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'error'
+    | 'info'
+    | 'warning'
+    | undefined;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
-}
+};
 
-const ButtonBase : FC<ButtonPropsType> = ({
+const ButtonBase: FC<ButtonPropsType> = ({
   variant,
   color,
   onClick,
   children,
 }) => (
-  <MuiButton
-    variant={variant}
-    color={color}
-    onClick={onClick}
-  >
+  <MuiButton variant={variant} color={color} onClick={onClick}>
     {children}
   </MuiButton>
 );

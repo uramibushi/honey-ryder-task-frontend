@@ -1,3 +1,3 @@
-import { useCreateNewTask } from "features/Tasks/hooks/useCreateNewTask";
+import { useCreateNewTask } from 'features/Tasks/hooks/useCreateNewTask';
 
 export { useCreateNewTask };
